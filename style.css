@@ -11846,7 +11846,7 @@ textarea.form-control-lg {
 }
 .nav {
   border-bottom: #dc6954 0.2rem solid;
-  padding: 0.3rem 0rem 0rem 1rem;
+  padding: 0.3rem 0rem 0.5rem 1rem;
   background-color: #044340;
   height: 15svh;
   -webkit-box-shadow: 0px 10px 1.5rem rgba(220, 104, 84, 0.5215686275);

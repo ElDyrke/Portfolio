@@ -44,7 +44,7 @@ $display-font-weight: 500;
 
 .nav {
     border-bottom: $primary 0.2rem solid;
-    padding: 0.3rem 0rem 0rem 1rem;
+    padding: 0.3rem 0rem 0.5rem 1rem;
     background-color: $brunswick-green;
     height: 15svh;
     @include box-shadow(0px, 10px, 1.5rem, #dc685485);
