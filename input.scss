@@ -100,7 +100,14 @@ body {
 
 .hero {
     min-height: 85svh;
-    height: fit-content;    
+    height: fit-content;
+    .img-wrap {
+        min-width: 30vw;
+    }
+    img {
+        min-height: 300px;
+        object-fit: contain;
+    }
 }
 
 .proyectos {

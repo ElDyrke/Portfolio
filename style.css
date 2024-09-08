@@ -11909,6 +11909,13 @@ body {
   min-height: 85svh;
   height: fit-content;
 }
+.hero .img-wrap {
+  min-width: 30vw;
+}
+.hero img {
+  min-height: 300px;
+  object-fit: contain;
+}
 
 .proyectos {
   padding-top: 2.5rem;
