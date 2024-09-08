@@ -6,16 +6,13 @@ $rich-black: #0c1518ff;
 $rich-white: #fdf6f2;
 $brunswick-green: #044340ff;
 $cornsilk: #faf2d1ff;
-$light-blue: #c0d8e3;
 $terracota: #dc6954;
-$dark-terracota: #1b0d0b;
 $light-terracota: #eebeaa;
 $light-terracota-2: #e9a194;
 
 $body-bg: $light-terracota;
 $body-color: $rich-black;
 $primary: $terracota;
-$secondary: $light-blue;
 $link-color: $primary;
 $link-hover-color: #cd462f;
 
@@ -97,7 +94,7 @@ body {
 }
 
 .sect {
-    padding: 5rem;
+    padding: 2rem;
     background-color: $light-terracota;
 }
 
@@ -107,7 +104,6 @@ body {
 }
 
 .proyectos {
-    padding: 5rem;
     padding-top: 2.5rem;
     .card-img-top {
         min-height: 15rem;
@@ -152,3 +148,9 @@ footer {
     font-size: 25px;
 }
 
+@media screen and (min-width: 600px) {
+    
+    .sect {
+        padding: 5rem;
+    }
+}
