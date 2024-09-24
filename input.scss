@@ -7,12 +7,14 @@ $rich-white: #fdf6f2;
 $brunswick-green: #044340ff;
 $cornsilk: #faf2d1ff;
 $terracota: #dc6954;
-$light-terracota: #eebeaa;
-$light-terracota-2: #e9a194;
+$light-terracota: #edccbe;
+$light-terracota-2: #e79587;
 
 $body-bg: $light-terracota;
 $body-color: $rich-black;
 $primary: $terracota;
+$secondary: $brunswick-green;
+$tertiary: $cornsilk;
 $link-color: $primary;
 $link-hover-color: #cd462f;
 
@@ -39,6 +41,10 @@ $display-font-weight: 700;
     }
   }
 
+main {
+    margin-top: 15vh;
+}
+
 .nav {
     border-bottom: $primary 0.2rem solid;
     padding: 0.3rem 0rem 0.5rem 1rem;
@@ -64,6 +70,10 @@ $display-font-weight: 700;
     .navbar-brand:hover {
         transform: rotateZ(10deg);
     }
+}
+
+h1, h2 {
+    text-shadow: #261a1957 0.02rem 0.04rem 0.07rem;
 }
 
 .btn {
@@ -154,6 +164,7 @@ footer {
     width: 1em;
     font-size: 25px;
 }
+
 
 @media screen and (min-width: 600px) {
     

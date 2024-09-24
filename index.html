@@ -12,27 +12,50 @@
 </head>
 <body>
     <header class="text-end sticky-top">
-        <nav
-            class="nav"
-        >
-        <div class="navbar-brand">
-            <img src="assets/claudio.svg" class="img-fluid" style="stroke: aliceblue;" alt="">
-        </div>
-
-            <div class="d-flex m-auto me-0 mb-0">
-                <a class="nav-link active" href="#inicio" aria-current="page"
-                    >Inicio</a
-                >
-                <a class="nav-link" href="#proyectos">Proyectos</a>
-                <a class="nav-link btn" href="#contacto">Contacto</a>
-                
+       <nav class="nav navbar fixed-top navbar-expand-md">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+                <img src="assets/claudio.svg" class="img-fluid" style="stroke: aliceblue;" alt="">
             </div>
-        </nav>
-        
-        
+            <button
+                class="navbar-toggler bg-primary"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+                class="offcanvas offcanvas-start bg-secondary"
+                tabindex="-1"
+                id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel"
+            >
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">
+                        Buenas!
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close text-reset bg-light"
+                        data-bs-dismiss="offcanvas"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                        <a class="nav-link" href="/blog/main.html">Blog</a>
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                        <a class="nav-link" href="#contacto">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       </nav>
     </header>
 
-  
 
     <main>
         
@@ -44,10 +67,10 @@
                     </div>
                     <div class="img-wrap row col-md-4">
                         <div class="col text-center">
-                            <img class="img-fluid" style="max-height: 300px;" src="assets/Diseño sin título(2).png" alt="">
+                            <img class="img-fluid" style="max-height: 300px;" src="assets/1.png" alt="">
                         </div>
                         <div class="col text-center">
-                            <img class="img-fluid" style="max-height: 300px;" src="assets/Diseño sin título(4).png" alt="">
+                            <img class="img-fluid" style="max-height: 300px;" src="assets/2.png" alt="">
                         </div>
                     </div>
                 </div>
