@@ -49,8 +49,10 @@
 }
 .wrap > div:first-child{
     flex: 1 0 100%;
+    padding-bottom: 2rem;
     display: inline-flex;
     justify-content: center;
+    border-bottom: #352a2a85 1px solid;
 }
 .wrap > * {
     flex: 1 1 calc(50% - 1rem);
