@@ -6,6 +6,7 @@
     outline-style: inset;
     background-color: #e07d69be;
     transition: all 0.2s ease-in-out;
+    max-width: 675px;
 }
 .post:hover {
     outline-offset: 0rem;
@@ -38,4 +39,22 @@
     width: 100%;
     max-height: 250px;
     object-fit: scale-down;
+}
+.wrap {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+.wrap > div:first-child{
+    flex: 1 0 100%;
+    display: inline-flex;
+    justify-content: center;
+}
+.wrap > * {
+    flex: 1 1 calc(50% - 1rem);
+    margin-inline-end: 1rem;
+    min-width: 250px;
+    max-width: 675px;
 }
