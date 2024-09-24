@@ -32,8 +32,17 @@
     color: rgb(16, 41, 37);
     padding: 1.2rem 1rem 0 0.8rem;
 }
+
+.post-container{
+    padding: 2rem;
+    max-width: 1000px;
+}
+.post-container p {
+    color: black;
+}
 .post-container h1,h2,h3 {
     color:rgb(7, 49, 45);
+    margin-top: 1.2rem;
 }
 .post-container img {
     width: 100%;
