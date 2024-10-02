@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="/unpoly/debug/unpoly.js"></script>
+    <script src="/bootstrap/debug/bootstrap.bundle.js"></script>
+    <link rel="stylesheet" href="/unpoly/debug/unpoly.css">
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+</head>
+<body>
+    <header class="text-end sticky-top">
+        <nav class="nav navbar fixed-top navbar-expand-md">
+         <div class="container-fluid">
+             <div class="navbar-brand">
+                 <img src="/assets/claudio.svg" class="img-fluid" style="stroke: aliceblue;" alt="">
+             </div>
+             <button
+                 class="navbar-toggler bg-primary"
+                 type="button"
+                 data-bs-toggle="offcanvas"
+                 data-bs-target="#offcanvasNavbar"
+                 aria-controls="offcanvasNavbar"
+             >
+                 <span class="navbar-toggler-icon"></span>
+             </button>
+             <div
+                 class="offcanvas offcanvas-start bg-secondary"
+                 tabindex="-1"
+                 id="offcanvasNavbar"
+                 aria-labelledby="offcanvasNavbarLabel"
+             >
+                 <div class="offcanvas-header">
+                     <h5 class="offcanvas-title text-primary" id="offcanvasNavbarLabel">
+                         Buenas!
+                     </h5>
+                     <button
+                         type="button"
+                         class="btn-close text-reset bg-light"
+                         data-bs-dismiss="offcanvas"
+                         aria-label="Close"
+                     ></button>
+                 </div>
+                 <div class="offcanvas-body">
+                     <div class="d-flex flex-column flex-md-row align-items-start align-items-md-end">
+                         <a class="nav-link" href="/index.html#inicio">Inicio</a>
+                         <a class="nav-link" href="/blog/main.html">Blog</a>
+                         <a class="nav-link" href="/index.html#proyectos">Proyectos</a>
+                         <a class="nav-link" href="/index.html#contacto">Contacto</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        </nav>
+     </header>
+ 
+    <main>
+
+    <div class="post-container container-fluid p-3">
+        <p dir="auto"><em>&lt;&lt; 2024-09-24 &gt;&gt;</em></p>
+        <h1 class="display-1 text-secondary mb-4" data-heading="¿Qué es la Indie Web?" class="display-1" dir="auto">¿Qué es la Indie Web?</h1>
+        <p dir="auto">La Indie Web es una comunidad de sitios web personales e independientes por la descentralización del internet, o más bien "re-descentralización". La mayoría de nosotros no recordamos el internet antes de las grandes redes sociales y el ambiente corporativo actual. De hecho mis primeras interacciones con el internet fueron Facebook y YouTube.</p>
+        <p dir="auto">El internet, si bien mucho menos accesible, era un lugar más de comunidad. O mas bien era percibido como un lugar, el internet de ahora a veces es referido como un agente, le "preguntamos a Google", en vez de "usar Google".</p>
+        <p dir="auto">Las grandes corporaciones uniformando la estética, bots, contenido creado por IA y muchos otros aspectos quitan el sentido de comunidad e identidad del internet. Los movimientos por la IndieWeb buscan recuperar parte de eso, crear comunidades, impulsar a la gente a tener blogs, fanpages, cualquier cosa realmente. En Neocities, uno de los grandes silos de páginas web hay algunas páginas que son historias interactivas, páginas de curación de contenido, etc.</p>
+        <h2 data-heading="Principios de la IndieWeb" dir="auto">Principios de la IndieWeb</h2>
+        <p dir="auto">La IndieWeb tiene 3 principios: </p>
+        <ul>
+        <li dir="auto"><strong>El contenido es tuyo</strong>, al publicar en tu propia página tu eres el dueño, no una compañía que podría eventualmente desaparecer, junto con tus datos y contenido.</li>
+        <li dir="auto"><strong>Estás mejor conectado</strong>, siguiendo el principio POSSE, un acrónimo que se traduce a "Publica en tu propio sitio, sindica en los otros" en resumen, mantienes la copia original de tu contenido en tu propio sitio, pero públicas copias en las redes sociales, para que tus amigos las puedan ver. Existen incluso herramientas para automatizar el proceso y conectar los comentarios y likes con tu página. Principalmente para plataformas como Tumblr, las redes sociales de Meta (Facebook, Instagram) y X (ex twitter), entregan más resistencia a la automatización.</li>
+        <li dir="auto"><strong>Tú estás en control</strong>, y está es una gran ventaja, no hay regulaciones, ni de las cosas que puedes decir, ni el formato en el que debe estar. Adicionalmente puedes tener links permanentes y legibles a tu contenido.</li>
+        </ul>
+        <h2 data-heading="Notas finales" dir="auto">Notas finales</h2>
+        <p dir="auto">Para conocer a cerca de recursos sobre como aprender a crear tu propio sitio web y mantenerlo puedes revisar <a data-tooltip-position="top" aria-label="https://www.instagram.com/p/C_uK7jdu2LM/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" rel="noopener" class="external-link" href="https://www.instagram.com/p/C_uK7jdu2LM/?utm_source=ig_web_copy_link&amp;igsh=MzRlODBiNWFlZA==" target="_blank">este post</a> en mi instagram <a data-tooltip-position="top" aria-label="https://www.instagram.com/gatoclaudio.webdev?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" rel="noopener" class="external-link" href="https://www.instagram.com/gatoclaudio.webdev?utm_source=ig_web_button_share_sheet&amp;igsh=ZDNlZDc0MzIxNw==" target="_blank">@gatoclaudio.webdev</a>.</p>
+    </div>
+
+
+
+    </main>
+
+    <footer>
+        © El Gato Claudio
+    </footer>
+
+    <script>
+        // scroll margin pero si funciona
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                window.scrollTo({
+                    top: target.offsetTop - (window.innerHeight * 0.15),
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+    </script>
+</body>
+</html>
