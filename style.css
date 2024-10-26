@@ -11906,6 +11906,7 @@ h1, .h1, h2, .h2 {
 
 body {
   scroll-padding-top: 15vh;
+  overflow-x: hidden;
 }
 
 .sect {
@@ -11931,7 +11932,7 @@ body {
 .hero .hero-img {
   width: 100%;
   height: auto;
-  object-fit: cover;
+  object-fit: scale-down;
 }
 
 .proyectos {
